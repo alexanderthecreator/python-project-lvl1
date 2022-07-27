@@ -5,7 +5,7 @@ from random import randint
 
 
 def game():
-      #Объявление переменной принимающей значение введенного имени игрока
+    """Основная логика игры"""
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}')
     print('Answer "yes" if the number is even, otherwise "no"')
