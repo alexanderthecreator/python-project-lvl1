@@ -38,6 +38,3 @@ def game():
     #Проверка условия количества правленьных ответов
     if correct_answers == 3:
         print(f'Congratulations, {name}!')
-
-
-game()
