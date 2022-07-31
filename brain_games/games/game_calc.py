@@ -51,6 +51,6 @@ def game():
                 print(f"{user_answer} is wrong answer ;(\nCorrect answer was {correct_answer}\nLet's try again, {user_name}!")
                 break
 
-    #Проверка условия количества правленьных ответов
+    #Проверка условия количества правильных ответов
     if correct_answers == 3:
         print(f'Congratulations, {user_name}!')
