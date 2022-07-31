@@ -24,7 +24,7 @@ def game():
             print('Correct!')
             correct_answers = correct_answers + 1
         else:
-            print(f"{user_answer} is wrong answer ;(.\nCorrect answer was {correct_answer}.\nLet's try again, {user_name}")
+            print(f"{user_answer} is wrong answer ;(.\nCorrect answer was {correct_answer}.\nLet's try again, {user_name}!")
             break
     #Проверка условия количества правленьных ответов
     if correct_answers == 3:
