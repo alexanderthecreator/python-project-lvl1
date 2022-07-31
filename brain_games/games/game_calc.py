@@ -2,13 +2,12 @@
 
 import prompt
 from random import randint, choice
-from greeting import greeting
 
+print('Welcome to the Brain Games!')
+user_name= prompt.string('May I have your name? ')
+print(f'Hello, {user_name}!')
 
 def game():
-    print('Welcome to the Brain Games!')
-    user_name= prompt.string('May I have your name? ')
-    print(f'Hello, {user_name}!')
     print('What is the result of the expression?')
     correct_answers = 0
     while correct_answers < 3:
@@ -55,6 +54,3 @@ def game():
     #Проверка условия количества правленьных ответов
     if correct_answers == 3:
         print(f'Congratulations, {user_name}!')
-
-
-game()
