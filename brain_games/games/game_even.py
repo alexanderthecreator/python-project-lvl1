@@ -7,7 +7,7 @@ from random import randint
 def game():
     """Основная логика игры"""
     name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}')
+    print(f'Hello, {name}!')
     print('Answer "yes" if the number is even, otherwise "no"')
     correct_answers = 0
     result = ""
