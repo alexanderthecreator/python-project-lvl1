@@ -12,7 +12,7 @@ def game():
     operator = choice(["+", "-", "*"])
     second_member = randint(1, 20)        
     if operator == "+":
-        print(f'Question: {first_member} {operator} {second_member}')
+        print(f'Question: {first_member}{operator}{second_member}')
         correct_answer = str(first_member + second_member)
     elif operator == "-":               
         while first_member < second_member:
@@ -21,9 +21,9 @@ def game():
             if first_member < second_member:
                 continue
             else:
-                print(f'Question: {first_member} {operator} {second_member}')
+                print(f'Question: {first_member}{operator}{second_member}')
                 correct_answer = str(first_member - second_member)
     elif operator == "*":
-        print(f'Question: {first_member} {operator} {second_member}')
+        print(f'Question: {first_member}{operator}{second_member}')
         correct_answer = str(first_member * second_member)
     return correct_answer 
