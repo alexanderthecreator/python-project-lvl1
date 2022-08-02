@@ -22,11 +22,11 @@ def game():
             second_member = randint(1,20)    
             if first_member < second_member:
                 continue
-            else:
-                print('Question: ', end='')
-                print(first_member, operator, second_member, sep=' ')
-                correct_answer = str(first_member - second_member)
-                return correct_answer
+        else:
+            print('Question: ', end='')
+            print(first_member, operator, second_member, sep=' ')
+            correct_answer = str(first_member - second_member)
+            return correct_answer
     elif operator == "*":
         print('Question: ', end='')
         print(first_member, operator, second_member, sep=' ')
