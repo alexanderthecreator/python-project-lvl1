@@ -22,9 +22,11 @@ def game():
             if first_member < second_member:
                 continue
             else:
-                print(f'Question: {first_member}{operator}{second_member}')
+                print('Question: ', end='')
+                print(first_member, operator, second_member, sep=' ')
                 correct_answer = str(first_member - second_member)
     elif operator == "*":
-        print(f'Question: {first_member}{operator}{second_member}')
+        print('Question: ', end='')
+        print(first_member, operator, second_member, sep=' ')
         correct_answer = str(first_member * second_member)
     return correct_answer
