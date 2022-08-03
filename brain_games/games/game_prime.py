@@ -8,6 +8,7 @@ GAME_INSTRUCTIONS = (
     f'Otherwise answer "no".'
 )
 
+
 def game():
     question = randint(1, 1000)
     print(f'Question: {question}')
