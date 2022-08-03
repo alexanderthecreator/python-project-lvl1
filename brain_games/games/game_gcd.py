@@ -1,7 +1,7 @@
 """Игра - наибольший общий делитель"""
 
 
-from random import randint, choice
+from random import randint
 
 
 GAME_INSTRUCTIONS = 'Find the greatest common divisor of given numbers.'

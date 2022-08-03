@@ -3,7 +3,8 @@
 from random import randint
 
 
-GAME_INSTRUCTIONS = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+GAME_INSTRUCTIONS = (f'Answer "yes" if given number is prime.'
+                    f' Otherwise answer "no".')
 
 
 def game():
@@ -16,3 +17,6 @@ def game():
         else:
             correct_answer = 'yes'
     return correct_answer
+
+
+print(GAME_INSTRUCTIONS)

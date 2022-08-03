@@ -20,7 +20,7 @@ def game():
     elif operator == "-":
         while first_member <= second_member:
             first_member = randint(1, 20)
-            second_member = randint(1,20)
+            second_member = randint(1, 20)
             if first_member < second_member:
                 continue
         else:
