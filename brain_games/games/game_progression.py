@@ -1,7 +1,7 @@
 """Игра - Арифметическая прогрессия"""
 
 
-from random import randint, choice
+from random import randint
 
 
 GAME_INSTRUCTIONS = 'What number is missing in the progression?'
