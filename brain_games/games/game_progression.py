@@ -7,7 +7,7 @@ from random import randint
 GAME_INSTRUCTIONS = 'What number is missing in the progression?'
 
 
-def game():
+def run_game():
     first_number = randint(1, 10)
     progression_interval = randint(1, 5)
     progression_length = randint(5, 20)
@@ -19,9 +19,8 @@ def game():
         progression.append(progression_next_index)
         i += 1
     progression_random_index = randint(1, progression_length - 1)
-    progression[progression_random_index] = ".."
-    index = progression.index('..')
-    print('Question: ', end='')
-    print(*progression, sep=" ")
-    correct_answer = str(progression[index - 1] + progression_interval)
-    return correct_answer
+    correct_answer = str(progression[progression_random_index])
+    progression[progression_random_index] = '..'
+    progression = [str(i) for i in progression]
+    question = " ".join(progression)
+    return question, correct_answer

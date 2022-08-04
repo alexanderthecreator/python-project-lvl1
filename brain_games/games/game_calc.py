@@ -7,29 +7,25 @@ from random import randint, choice
 GAME_INSTRUCTIONS = 'What is the result of the expression?'
 
 
-def game():
-
-    first_member = randint(1, 20)
+def run_game():
+    first_number = randint(1, 20)
     operator = choice(["+", "-", "*"])
-    second_member = randint(1, 20)
+    second_number = randint(1, 20)
     if operator == "+":
-        print('Question: ', end='')
-        print(first_member, operator, second_member, sep=' ')
-        correct_answer = str(first_member + second_member)
-        return correct_answer
+        question = f'{first_number} {operator} {second_number}'
+        correct_answer = str(first_number + second_number)
+        return question, correct_answer
     elif operator == "-":
-        while first_member <= second_member:
-            first_member = randint(1, 20)
-            second_member = randint(1, 20)
-            if first_member < second_member:
+        while first_number <= second_number:
+            first_number = randint(1, 20)
+            second_number = randint(1, 20)
+            if first_number < second_number:
                 continue
         else:
-            print('Question: ', end='')
-            print(first_member, operator, second_member, sep=' ')
-            correct_answer = str(first_member - second_member)
-            return correct_answer
+            question = f'{first_number} {operator} {second_number}'
+            correct_answer = str(first_number - second_number)
+            return question, correct_answer
     elif operator == "*":
-        print('Question: ', end='')
-        print(first_member, operator, second_member, sep=' ')
-        correct_answer = str(first_member * second_member)
-        return correct_answer
+        question = f'{first_number} {operator} {second_number}'
+        correct_answer = str(first_number * second_number)
+        return question, correct_answer

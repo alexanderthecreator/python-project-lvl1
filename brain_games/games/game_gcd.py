@@ -16,9 +16,9 @@ def find_gcd(first_number, second_number):
     return str(first_number)
 
 
-def game():
+def run_game():
     first_number = randint(1, 50)
     second_number = randint(1, 50)
-    print(f'Question: {first_number} {second_number}')
+    question = f'{first_number} {second_number}'
     correct_answer = find_gcd(first_number, second_number)
-    return correct_answer
+    return question, correct_answer
