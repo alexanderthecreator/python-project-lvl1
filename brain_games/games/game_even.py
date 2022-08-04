@@ -17,7 +17,7 @@ def determine_even(question):
 def run_game():
     question = randint(1, 50)
     is_even = determine_even(question)
-    if is_even == True:
+    if is_even is True:
         correct_answer = "yes"
     else:
         correct_answer = "no"
