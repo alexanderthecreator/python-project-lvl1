@@ -10,8 +10,6 @@ GAME_INSTRUCTIONS = 'Answer "yes" if the number is even, otherwise answer "no".'
 def determine_even(question):
     if question % 2 == 0:
         return True
-    else:
-        return False
 
 
 def run_game():
