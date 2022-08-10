@@ -10,14 +10,18 @@ GAME_INSTRUCTIONS = (
 )
 
 
-def run_game():
+def is_prime(question):
+    for divider in range(2, question // 2 + 1):
+        if question % divider == 0 and question != 2:
+            return False
+
+
+def get_question_and_correct_answer():
     question = randint(1, 1000)
-    correct_answer = "yes"
-    while question == 1 or question == 0:
+    while question <= 1:
         question = randint(1, 1000)
+    if is_prime(question) == False:
+        correct_answer = 'no'
     else:
-        for divider in range(2, question // 2 + 1):
-            if question % divider == 0 and question != 2:
-                correct_answer = 'no'
-                break
+        correct_answer = 'yes'
     return question, correct_answer

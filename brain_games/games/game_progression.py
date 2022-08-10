@@ -5,12 +5,26 @@ from random import randint
 
 
 GAME_INSTRUCTIONS = 'What number is missing in the progression?'
+LOW_BOUND_OF_PROGRESSION_FIRST_NUMBER = 1
+HIGH_BOUND_OF_PROGRESSION_FIRST_NUMBER = 10
+LOW_BOUND_OF_PROGRESSION_INTERVAL = 1
+HIGH_BOUND_OF_PROGRESSION_INTERVAL = 5
+LOW_BOUND_OF_PROGRESSION_LENGHT = 5
+HIGH_BOUND_OF_PROGRESSION_LENGHT = 20
 
 
-def run_game():
-    first_number = randint(1, 10)
-    progression_interval = randint(1, 5)
-    progression_length = randint(5, 20)
+def get_question_and_correct_answer():
+    first_number = randint(
+        LOW_BOUND_OF_PROGRESSION_FIRST_NUMBER,
+        HIGH_BOUND_OF_PROGRESSION_FIRST_NUMBER,
+        )
+    progression_interval = randint(
+        LOW_BOUND_OF_PROGRESSION_INTERVAL,
+        HIGH_BOUND_OF_PROGRESSION_INTERVAL,
+        )
+    progression_length = randint(LOW_BOUND_OF_PROGRESSION_LENGHT,
+        HIGH_BOUND_OF_PROGRESSION_LENGHT,
+        )
     progression_next_index = first_number
     progression = [first_number]
     i = 0

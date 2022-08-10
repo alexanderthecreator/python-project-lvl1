@@ -1,26 +1,28 @@
 import prompt
 
 
-def user_greeting():
+GAME_ROUNDS = 3
+
+
+def greet_user_and_get_his_name():
     print('Welcome to the Brain Games!')
     user_name = prompt.string('May I have your name? ')
     print(f'Hello, {user_name}!')
     return user_name
 
 
-def game_engine(run_game, GAME_INSTRUCTIONS):
-    user_name = user_greeting()
+def handle_game(get_question_and_correct_answer, GAME_INSTRUCTIONS):
+    user_name = greet_user_and_get_his_name()
     print(GAME_INSTRUCTIONS)
     correct_answers = 0
-    rounds = 3
-    while correct_answers < rounds:
-        question, correct_answer = run_game()
+    while correct_answers < GAME_ROUNDS:
+        question, correct_answer = get_question_and_correct_answer()
         print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ').lower()
         if correct_answer == user_answer:
             print('Correct!')
             correct_answers += 1
-            if correct_answers == 3:
+            if correct_answers == GAME_ROUNDS:
                 print(f'Congratulations, {user_name}!')
         else:
             print(f"'{user_answer}' is wrong answer ;(."

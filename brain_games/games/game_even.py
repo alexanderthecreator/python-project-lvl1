@@ -5,17 +5,21 @@ from random import randint
 
 
 GAME_INSTRUCTIONS = 'Answer "yes" if the number is even, otherwise answer "no".'
+LOW_BOUND_OF_NUMBER_SEQUENCE = 1
+HIGH_BOUND_OF_NUMBER_SEQUENCE = 50
 
 
-def determine_even(question):
+def is_even(question):
     if question % 2 == 0:
         return True
 
 
-def run_game():
-    question = randint(1, 50)
-    is_even = determine_even(question)
-    if is_even is True:
+def get_question_and_correct_answer():
+    question = randint(
+        LOW_BOUND_OF_NUMBER_SEQUENCE,
+        HIGH_BOUND_OF_NUMBER_SEQUENCE,
+        )
+    if is_even(question) is True:
         correct_answer = "yes"
     else:
         correct_answer = "no"
