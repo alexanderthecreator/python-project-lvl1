@@ -27,11 +27,10 @@ def get_question_and_correct_answer():
         HIGH_BOUND_OF_PROGRESSION_LENGHT,
     )
     progression_next_index = first_number
-    progression = [first_number]
+    progression = []
     i = 0
     while i < progression_length:
-        progression_next_index = progression_next_index + progression_interval
-        progression.append(progression_next_index)
+        progression.append(progression_next_index + progression_interval * i)
         i += 1
     progression_random_index = randint(1, progression_length - 1)
     correct_answer = str(progression[progression_random_index])
