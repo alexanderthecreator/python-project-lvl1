@@ -22,11 +22,11 @@ def get_question_and_correct_answer():
     first_number = randint(
         LOW_BOUND_OF_NUMBER_SEQUENCE,
         HIGH_BOUND_OF_NUMBER_SEQUENCE,
-        )
+    )
     second_number = randint(
         LOW_BOUND_OF_NUMBER_SEQUENCE,
         HIGH_BOUND_OF_NUMBER_SEQUENCE,
-        )
+    )
     question = f'{first_number} {second_number}'
     correct_answer = get_gcd(first_number, second_number)
     return question, correct_answer

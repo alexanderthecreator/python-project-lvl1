@@ -17,14 +17,15 @@ def get_question_and_correct_answer():
     first_number = randint(
         LOW_BOUND_OF_PROGRESSION_FIRST_NUMBER,
         HIGH_BOUND_OF_PROGRESSION_FIRST_NUMBER,
-        )
+    )
     progression_interval = randint(
         LOW_BOUND_OF_PROGRESSION_INTERVAL,
         HIGH_BOUND_OF_PROGRESSION_INTERVAL,
-        )
-    progression_length = randint(LOW_BOUND_OF_PROGRESSION_LENGHT,
+    )
+    progression_length = randint(
+        LOW_BOUND_OF_PROGRESSION_LENGHT,
         HIGH_BOUND_OF_PROGRESSION_LENGHT,
-        )
+    )
     progression_next_index = first_number
     progression = [first_number]
     i = 0
