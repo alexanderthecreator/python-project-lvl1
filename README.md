@@ -2,9 +2,9 @@
 [![Actions Status](https://github.com/alexanderthecreator/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/alexanderthecreator/python-project-lvl1/actions)
 <a href="https://codeclimate.com/github/alexanderthecreator/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/b975a0a03abbc94c1b8a/maintainability" /></a>
 
-#Учебный проект **HEXLET**
+# Учебный проект **HEXLET**
 
-[Brain-calc Game](https://asciinema.org/a/7z6Q4M3osPxmZdVtiei2WXTU5)
+![Brain-calc Game](https://asciinema.org/a/7z6Q4M3osPxmZdVtiei2WXTU5)
 
 [Brain-even Game](https://asciinema.org/a/UV6NFR5BqMBBARgYNXrVgYVCn)
 
