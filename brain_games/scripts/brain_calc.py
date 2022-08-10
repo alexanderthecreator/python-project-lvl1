@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 
-from brain_games.games.game_calc import get_question_and_correct_answer
-from brain_games.games.game_calc import GAME_INSTRUCTIONS
+from brain_games.games import game_calc
 from brain_games.engine import handle_game
 
 
 def main():
-    handle_game(get_question_and_correct_answer, GAME_INSTRUCTIONS)
+    handle_game(game_calc)
 
 
 if __name__ == '__main__':
