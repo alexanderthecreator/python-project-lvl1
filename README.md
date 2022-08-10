@@ -2,12 +2,14 @@
 [![Actions Status](https://github.com/alexanderthecreator/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/alexanderthecreator/python-project-lvl1/actions)
 <a href="https://codeclimate.com/github/alexanderthecreator/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/b975a0a03abbc94c1b8a/maintainability" /></a>
 
-https://asciinema.org/a/9Ga1ZcnOO5i617r3mpxsu6Oht
+#Учебный проект **HEXLET**
 
-https://asciinema.org/a/q1HuhknD7hqd5CIIGlPgAewI9
+[Brain-calc Game](https://asciinema.org/a/7z6Q4M3osPxmZdVtiei2WXTU5)
 
-https://asciinema.org/a/0CJ8nJAnmImBXmMwyK0j10glH
+[Brain-even Game](https://asciinema.org/a/UV6NFR5BqMBBARgYNXrVgYVCn)
 
-https://asciinema.org/a/0nnZSZshPlo9nM9dxSzUha9pB
+[Brain-gcd Game](https://asciinema.org/a/EcbR0OaoMu0eu1J4C0KD9lEwc)
 
-https://asciinema.org/a/G9SE5YqRvJO56ItANCfsLqrB4
+[Brain-prime Game](https://asciinema.org/a/ftUZVVwGTe9ttGxNDT63wTjFE)
+
+[Brain-progression Game](https://asciinema.org/a/EgMOQ54d4nbSjQZfmLv0WPw8M)
