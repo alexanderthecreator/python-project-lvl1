@@ -4,7 +4,7 @@
 
 # Учебный проект **HEXLET**
 
-AsciinemaPlayer.create(https://asciinema.org/a/7z6Q4M3osPxmZdVtiei2WXTU5, containerElement);
+[![asciicast](https://asciinema.org/a/7z6Q4M3osPxmZdVtiei2WXTU5.png)](https://asciinema.org/a/7z6Q4M3osPxmZdVtiei2WXTU5)
 
 [Brain-even Game](https://asciinema.org/a/UV6NFR5BqMBBARgYNXrVgYVCn)
 
