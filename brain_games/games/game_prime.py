@@ -16,8 +16,8 @@ def is_prime(question):
     for divider in range(2, question // 2 + 1):
         if question % divider == 0 and question != 2:
             return False
-        else:
-            return True
+        #else:
+            #return True
 
 
 def get_question_and_correct_answer():
