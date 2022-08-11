@@ -24,21 +24,11 @@ def get_question_and_correct_answer():
         correct_answer = str(first_number + second_number)
         return question, correct_answer
     elif operator == '-':
-        while first_number <= second_number:
-            first_number = randint(
-                LOW_BOUND_OF_NUMBER_SEQUENCE,
-                HIGH_BOUND_OF_NUMBER_SEQUENCE,
-            )
-            second_number = randint(
-                LOW_BOUND_OF_NUMBER_SEQUENCE,
-                HIGH_BOUND_OF_NUMBER_SEQUENCE,
-            )
-            if first_number < second_number:
-                continue
-        else:
-            question = f'{first_number} {operator} {second_number}'
-            correct_answer = str(first_number - second_number)
-            return question, correct_answer
+        minuend = max(first_number, second_number)
+        subtrahend = min(first_number, second_number)
+        question = f'{minuend} {operator} {subtrahend}'
+        correct_answer = str(minuend - subtrahend)
+        return question, correct_answer
     elif operator == '*':
         correct_answer = str(first_number * second_number)
         return question, correct_answer

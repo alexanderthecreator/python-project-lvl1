@@ -30,11 +30,10 @@ def get_question_and_correct_answer():
     progression = []
     i = 0
     while i < progression_length:
-        progression.append(progression_next_index + progression_interval * i)
+        progression.append(str(progression_next_index + progression_interval * i))
         i += 1
     progression_random_index = randint(1, progression_length - 1)
-    correct_answer = str(progression[progression_random_index])
+    correct_answer = progression[progression_random_index]
     progression[progression_random_index] = '..'
-    progression = [str(i) for i in progression]
-    question = " ".join(progression)
+    question = ' '.join(progression)
     return question, correct_answer

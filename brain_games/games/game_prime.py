@@ -16,6 +16,8 @@ def is_prime(question):
     for divider in range(2, question // 2 + 1):
         if question % divider == 0 and question != 2:
             return False
+        else:
+            return True
 
 
 def get_question_and_correct_answer():
@@ -28,8 +30,8 @@ def get_question_and_correct_answer():
             LOW_BOUND_OF_NUMBER_SEQUENCE,
             HIGH_BOUND_OF_NUMBER_SEQUENCE,
         )
-    if is_prime(question) is False:
-        correct_answer = 'no'
-    else:
+    if is_prime(question) is True:
         correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
     return question, correct_answer

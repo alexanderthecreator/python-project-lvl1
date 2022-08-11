@@ -10,8 +10,7 @@ HIGH_BOUND_OF_NUMBER_SEQUENCE = 50
 
 
 def is_even(question):
-    if question % 2 == 0:
-        return True
+    return question % 2 == 0
 
 
 def get_question_and_correct_answer():
@@ -19,7 +18,7 @@ def get_question_and_correct_answer():
         LOW_BOUND_OF_NUMBER_SEQUENCE,
         HIGH_BOUND_OF_NUMBER_SEQUENCE,
     )
-    if is_even(question) is True:
+    if is_even(question):
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
