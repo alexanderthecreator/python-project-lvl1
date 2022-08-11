@@ -14,10 +14,10 @@ def is_even(question):
 
 
 def get_question_and_correct_answer():
-    question = randint(
-        LOW_BOUND_OF_NUMBER_SEQUENCE,
-        HIGH_BOUND_OF_NUMBER_SEQUENCE,
-    )
+    question = 453 #randint(
+        #LOW_BOUND_OF_NUMBER_SEQUENCE,
+        #HIGH_BOUND_OF_NUMBER_SEQUENCE,
+    #)
     if is_even(question):
         correct_answer = 'yes'
     else:

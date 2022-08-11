@@ -30,8 +30,8 @@ def get_question_and_correct_answer():
             LOW_BOUND_OF_NUMBER_SEQUENCE,
             HIGH_BOUND_OF_NUMBER_SEQUENCE,
         )
-    if is_prime(question) is True:
-        correct_answer = 'yes'
-    else:
+    if is_prime(question) is False:
         correct_answer = 'no'
+    else:
+        correct_answer = 'yes'
     return question, correct_answer
